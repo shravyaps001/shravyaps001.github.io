@@ -1,10 +1,10 @@
 export const resumeData = {
   name: "Shravya P S",
   profileImage: "/tmp/img.png",
-  role: "Associate Engineer",
-  location: "Mysore",
+  role: "Software Engineer",
+  location: "Raleigh, NC, USA",
   email: "psshravya1@gmail.com",
-  phone: "(+91) 9483543453",
+  phone: "+1 919-349-0332",
   linkedin: "shravya-p-s-54336321b",
   about: "Software Engineer specializing in Angular, Python, and FastAPI, with experience building scalable web applications across enterprise and startup environments. AWS Certified Cloud Practitioner with a strong foundation in Electrical & Electronics Engineering. Recognized for strong client collaboration and clean, efficient solutions",
   experience: [
