@@ -5,7 +5,7 @@ export const resumeData = {
   location: "Raleigh, NC, USA",
   email: "psshravya1@gmail.com",
   phone: "+1-9193490332",
-  linkedin: "shravya-p-s-54336321",
+  linkedin: "shravya-p-s-54336321b",
 
   about:
     "Software Engineer and current M.S. Computer Science student with 2+ years of professional experience building production full-stack applications across frontend, backend, APIs, cloud services, and AI-enabled workflows. Experienced with Angular, React, TypeScript, Python, FastAPI, REST APIs, AWS, and relational databases. Strong foundation in data structures, algorithms, databases, software architecture, and web application development, with experience delivering end-to-end features and production systems.",
@@ -84,14 +84,6 @@ export const resumeData = {
         "GPA: 9.11/10",
         "Awarded Gold Medal for academic excellence"
       ]
-    },
-
-    {
-      institution: "Vijaya Vittala Composite PU College",
-      location: "Mysuru, India",
-      degree: "Pre-University (PUC) — PCMB",
-      period: "2017 – 2019",
-      details: []
     }
   ],
 
