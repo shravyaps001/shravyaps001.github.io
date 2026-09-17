@@ -20,6 +20,8 @@ export default function Navbar() {
         <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <Link href="#about" className="nav-link">About</Link>
           <Link href="#skills" className="nav-link">Skills</Link>
+          <Link href="#experience" className="nav-link">Experience</Link>
+          <Link href="#education" className="nav-link">Education</Link>
           <Link href="#projects" className="nav-link">Projects</Link>
           <Link href="#contact" className="nav-link">Contact</Link>
           {mounted && (

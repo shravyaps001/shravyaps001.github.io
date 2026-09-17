@@ -1,9 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
 import { resumeData } from '@/data/resume';
 
-const ProjectCard = ({ project, index }: { project: { name: string; client?: string; description?: string; details?: string[]; tech?: string; }; index: number }) => (
+const ExperienceCard = ({ project, index }: { project: any; index: number }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +28,7 @@ const ProjectCard = ({ project, index }: { project: { name: string; client?: str
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
       <div>
         <div style={{ color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.05em', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
-          {project.client || 'Academic / Personal'}
+          {project.client}
         </div>
         <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)' }}>{project.name}</h3>
       </div>
@@ -55,16 +54,19 @@ const ProjectCard = ({ project, index }: { project: { name: string; client?: str
   </motion.div>
 );
 
-export default function Projects() {
-  const allProjects = resumeData.projects;
+export default function Experience() {
+  // Flatten experience projects just like the old layout did
+  const allExperienceProjects = resumeData.experience.flatMap(exp => 
+    exp.projects.map(p => ({ ...p, client: exp.company }))
+  );
 
   return (
-    <section id="projects" className="section" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+    <section id="experience" className="section" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title">Professional Experience</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem' }}>
-          {allProjects.map((project, index) => (
-            <ProjectCard key={project.name} project={project} index={index} />
+          {allExperienceProjects.map((project, index) => (
+            <ExperienceCard key={project.name} project={project} index={index} />
           ))}
         </div>
       </div>

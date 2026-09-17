@@ -1,119 +1,249 @@
 export const resumeData = {
   name: "Shravya P S",
-  profileImage: "/tmp/img.png",
-  role: "Software Engineer",
+  profileImage: "/tmp/img_1.jpeg",
+  role: "Software Engineer — Full Stack Developer",
   location: "Raleigh, NC, USA",
   email: "psshravya1@gmail.com",
-  phone: "+1 919-349-0332",
-  linkedin: "shravya-p-s-54336321b",
-  about: "Software Engineer specializing in Angular, Python, and FastAPI, with experience building scalable web applications across enterprise and startup environments. AWS Certified Cloud Practitioner with a strong foundation in Electrical & Electronics Engineering. Recognized for strong client collaboration and clean, efficient solutions",
+  phone: "+1-9193490332",
+  linkedin: "shravya-p-s-54336321",
+
+  about:
+    "Software Engineer and current M.S. Computer Science student with 2+ years of professional experience building production full-stack applications across frontend, backend, APIs, cloud services, and AI-enabled workflows. Experienced with Angular, React, TypeScript, Python, FastAPI, REST APIs, AWS, and relational databases. Strong foundation in data structures, algorithms, databases, software architecture, and web application development, with experience delivering end-to-end features and production systems.",
+
   experience: [
     {
       company: "Brillio Technologies",
-      location: "Bangalore",
-      role: "Associate Engineer",
-      period: "Mar 2024 – Present",
+      location: "Bangalore, India",
+      role: "Software Development Engineer 1",
+      period: "Mar 2024 – Jul 2026",
+
       projects: [
         {
-          name: "DNM Transformation – UX & Platform Enhancements",
+          name: "Verizon - DNM Transformation: UX & Platform Enhancements",
           client: "Verizon",
-          tech: "Angular, TypeScript",
+          tech: "Angular, TypeScript, REST APIs",
+
           details: [
-            "Developed dynamic and responsive user interfaces for a VoIP-based web application.",
-            "Integrated REST APIs and collaborated with backend teams to implement features.",
-            "Took ownership of UI modules, improving performance and accessibility.",
-            "Actively engaged in client meetings and requirement analysis."
+            "Developed responsive, reusable Angular interfaces for a VoIP-based enterprise application supporting Verizon.",
+            "Integrated REST APIs and collaborated with backend engineers to deliver end-to-end application features.",
+            "Translated business requirements into maintainable, accessible, and production-ready UI modules."
           ]
         },
+
         {
-          name: "AI&D – Network Genie",
+          name: "Verizon - AI&D: Network Genie",
           client: "Verizon",
-          tech: "Python, FastAPI",
+          tech: "Python, FastAPI, LLM Workflows",
+
           details: [
-            "Built and optimized backend services using Python and FastAPI.",
-            "Designed scalable APIs and implemented business logic for core platform components.",
-            "Collaborated across agile teams, maintaining clean and testable codebases.",
-            "Contributed to an internal AI agent by analyzing user prompts, preprocessing text inputs, and improving response quality for LLM-based workflows."
+            "Developed backend services and REST APIs using Python and FastAPI for an enterprise network platform.",
+            "Owned end-to-end RBAC implementation, integrating enterprise SSO and enabling permission-based access across UI and backend.",
+            "Built an admin dashboard for managing permissions, ADOM mappings, and user-specific overrides.",
+            "Built modular business logic and contributed to an internal AI agent through prompt analysis and text preprocessing while collaborating in Agile teams to deliver production-ready features."
           ]
         }
       ]
     },
+
     {
-      company: "Prixgen Tech Solutions Pvt. Ltd",
-      location: "Mysuru",
+      company: "Prixgen Tech Solutions Pvt. Ltd.",
+      location: "Mysuru, India",
       role: "Web Developer Intern",
       period: "Mar 2023 – Jun 2023",
+
       projects: [
         {
           name: "Internship Projects",
+          tech: "Python, Django, HTML, CSS, JavaScript, MySQL",
+
           details: [
-            "Built a web-based image-to-Excel converter using Django, Python, HTML, CSS, JavaScript.",
-            "Developed a facial recognition system with MySQL backend and Django framework.",
-            "Applied machine learning concepts in real-world application scenarios.",
-            "Developed a Django-based attendance automation system that generated daily attendance and productivity reports, removing the need for manual log review."
+            "Built a Django-based image-to-Excel converter using Python, HTML, CSS, and JavaScript for automated data processing.",
+            "Developed Django applications for facial recognition and automated attendance reporting using MySQL."
           ]
         }
       ]
     }
   ],
+
   education: [
     {
-      institution: "The National Institute of Engineering, Mysuru",
-      degree: "Bachelor of Engineering – Electrical and Electronics Engineering",
-      period: "2019 - 2023",
-      details: ["Awarded Gold Medal for academic excellence"]
+      institution: "North Carolina State University",
+      location: "Raleigh, NC, USA",
+      degree: "Master of Computer Science",
+      period: "Aug 2026 – Expected 2028",
+      details: []
     },
+
     {
-      institution: "Vijaya Vittala Composite PU College Mysuru",
-      degree: "Pre-University (PUC) - PCMB",
-      period: "2017 - 2019",
+      institution: "The National Institute of Engineering",
+      location: "Mysuru, India",
+      degree: "Bachelor of Engineering — Electrical & Electronics Engineering",
+      period: "2019 – 2023",
+
+      details: [
+        "GPA: 9.11/10",
+        "Awarded Gold Medal for academic excellence"
+      ]
+    },
+
+    {
+      institution: "Vijaya Vittala Composite PU College",
+      location: "Mysuru, India",
+      degree: "Pre-University (PUC) — PCMB",
+      period: "2017 – 2019",
       details: []
     }
   ],
+
+  projects: [
+    {
+      name: "CLINEXCA — Telehealth Platform",
+      type: "Personal Project",
+      location: "Sri Lanka",
+      tech: "Angular, React, Python, FastAPI, REST APIs, AWS IVS",
+
+      details: [
+        "Built and deployed a production telehealth platform serving real users in Sri Lanka, covering frontend, backend, APIs, and cloud-integrated application workflows.",
+        "Developed an appointment booking system supporting patient-provider scheduling and telehealth consultations.",
+        "Designed and implemented frontend and backend components and integrated REST APIs across application workflows.",
+        "Integrated AWS Interactive Video Service (AWS IVS) to enable real-time video consultations.",
+        "Tested and deployed features in a live environment with emphasis on reliability, usability, and maintainability."
+      ]
+    },
+
+    {
+      name: "Pneumonia Detection in Chest X-rays Using CNN",
+      type: "Academic Project",
+      tech: "Python, Machine Learning, CNN",
+
+      details: [
+        "Built a deep learning model to classify pneumonia presence from chest X-ray images."
+      ]
+    },
+
+    {
+      name: "Brain Tumor Detection Using CNN",
+      type: "Academic Project",
+      tech: "Python, Machine Learning, CNN",
+
+      details: [
+        "Developed a CNN-based classifier to detect brain tumors from MRI images."
+      ]
+    },
+
+    {
+      name: "Drowsiness Detection and Alert System Using Arduino",
+      type: "Academic Project",
+      tech: "Arduino, Embedded Systems",
+
+      details: [
+        "Designed a real-time alert system to detect driver fatigue and improve road safety."
+      ]
+    },
+
+    {
+      name: "Servo Motor Control with Arduino",
+      type: "Academic Project",
+      tech: "Arduino, Microcontrollers",
+
+      details: [
+        "Controlled servo motor operations using microcontroller programming and embedded system concepts."
+      ]
+    }
+  ],
+
   techStack: {
-    frontend: ["Next.js", "Angular", "React.js", "HTML", "CSS", "JavaScript", "Bootstrap", "Angular Material"],
-    backend: ["Python", "FastAPI", "Java", "Spring Boot", "Django"],
-    database: ["MySQL", "PostgreSQL"],
-    cloud: ["AWS (Certified Cloud Practitioner)"],
-    tools: ["Postman", "Figma", "Jira", "Git"],
-    os: ["Windows", "Linux", "macOS"]
+    languages: [
+      "Python",
+      "Java",
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "HTML5",
+      "CSS3"
+    ],
+
+    frontend: [
+      "Next.js",
+      "Angular",
+      "React.js",
+      "Bootstrap",
+      "Angular Material"
+    ],
+
+    backend: [
+      "FastAPI",
+      "Django",
+      "Spring Boot",
+      "REST APIs"
+    ],
+
+    databases: [
+      "MySQL",
+      "PostgreSQL"
+    ],
+
+    cloudAndTools: [
+      "AWS",
+      "AWS IVS",
+      "Git",
+      "Postman",
+      "Jira",
+      "Figma"
+    ],
+
+    aiMl: [
+      "LLM Workflows",
+      "AI Agents",
+      "Prompt Analysis",
+      "Text Preprocessing",
+      "Machine Learning",
+      "CNN"
+    ],
+
+    computerScience: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Architecture",
+      "Agile Development"
+    ]
   },
+
   skills: [
     "Frontend Development",
     "Backend Development",
     "Full Stack Development",
     "REST APIs",
-    "Machine Learning",
-    "Agile Practices",
-    "Object-Oriented Programming (OOP)",
-    "Data Structures",
-    "Algorithms",
-    "DBMS"
+    "AI/ML",
+    "LLM Workflows",
+    "Cloud Computing",
+    "RBAC & Enterprise SSO",
+    "Software Architecture",
+    "Data Structures & Algorithms",
+    "Database Management",
+    "Agile Development"
   ],
-  academicProjects: [
-    {
-      name: "Pneumonia Detection in Chest X-rays Using CNN",
-      description: "Built a deep learning model to classify pneumonia presence from X-ray images."
-    },
-    {
-      name: "Brain Tumor Detection Using CNN",
-      description: "Developed a CNN-based classifier to detect brain tumors from MRI images."
-    },
-    {
-      name: "Drowsiness Detection and Alert System Using Arduino",
-      description: "Designed a real-time alert system to detect driver fatigue."
-    },
-    {
-      name: "Servo Motor Control with Arduino",
-      description: "Controlled servo motor operations using microcontroller programming."
-    }
-  ],
+
   additionalSkills: [
-    "Strong communication and client interaction",
-    "Time management and team collaboration",
-    "Quick learner and adaptable to new technologies",
-    "Leadership and initiative in technical settings",
+    "Strong communication and client collaboration",
+    "Agile teamwork and cross-functional collaboration",
+    "Leadership and initiative in technical projects",
+    "Quick learner with adaptability to new technologies",
+    "Time management and problem-solving",
     "Mentor – CMR Scholarship Program: Guided high-school students on academic and career planning"
   ],
-  hobbies: ["Sketching", "Painting", "Artwork", "Ball Badminton (represented school and college)"]
+
+  certifications: [
+    "AWS Certified Cloud Practitioner"
+  ],
+
+  hobbies: [
+    "Sketching",
+    "Painting",
+    "Artwork",
+    "Ball Badminton (represented school and college)"
+  ]
 };

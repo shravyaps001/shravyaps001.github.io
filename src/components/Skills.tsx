@@ -105,12 +105,13 @@ const SkillCategory = ({ title, skills, index }: { title: string; skills: string
 
 export default function Skills() {
   const allTech = [
-    ...resumeData.techStack.frontend,
-    ...resumeData.techStack.backend,
-    ...resumeData.techStack.database,
-    ...resumeData.techStack.cloud,
-    ...resumeData.techStack.tools,
-    ...resumeData.techStack.os
+    ...(resumeData.techStack.languages || []),
+    ...(resumeData.techStack.frontend || []),
+    ...(resumeData.techStack.backend || []),
+    ...(resumeData.techStack.databases || []),
+    ...(resumeData.techStack.cloudAndTools || []),
+    ...(resumeData.techStack.aiMl || []),
+    ...(resumeData.techStack.computerScience || [])
   ];
 
   return (
